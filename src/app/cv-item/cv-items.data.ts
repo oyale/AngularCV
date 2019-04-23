@@ -64,9 +64,9 @@ export const PROJECTS: CvItem[] = [
     begin: '2019-03',
     end: '',
     description: 'Traducción y adaptación del proyecto AngularCV. ' +
-    'Esta página web es el resultado de este proyecto, gracias al código escrito por Sebastian Schreck.',
+    'Esta página web es el resultado de este proyecto, gracias al código escrito por Sebastian Schreck ' + 'y traducido por Pelayo García',
     tags: ['Angular 4', 'Material Design', 'Web', 'CSS'],
-    link: 'https://github.com/StegSchreck/AngularCV',
+    link: 'https://github.com/oyale/AngularCV-es',
     thumbnail: '../AngularCV.png',
   },
    
@@ -74,7 +74,6 @@ export const PROJECTS: CvItem[] = [
 ];
 
 export const VOLUNTEERING: CvItem[] = [
-
    {
     title: 'Actividad voluntaria',
     subtitle: 'Brevísima explicación',
@@ -85,7 +84,6 @@ export const VOLUNTEERING: CvItem[] = [
     link: '',
     thumbnail: '',
   },
-  
 ];
 
 export const CONTACT = {
