@@ -4,31 +4,31 @@
 
 # AngularCV
 
-## Angular basics
+## Fundamentos de Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 1.3.2.
 
-### Development server
+### Servidor de desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ejecute `ng serve` para tener un servidor de desarrollo. Vaya a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias cualquiera de los archivos.
 
-### Code scaffolding
+### Andamiaje de código
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecutar `ng generate component component-name` para generar un nuevo componente. También puede utilizar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Build
+#### Compilación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Ejecutar `ng build` para construir el proyecto. Los archivos de compilación se almacenarán en el directorio `dist/`. Utilice el parámetro `-prod` para compilar una versión de producción.
 
-### Running unit tests
+#### Ejecutando pruebas de unidad
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecute `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
 
-### Running end-to-end tests
+### Realizando pruebas de punta a punta
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Ejecute `ng e2e` para ejecutar las pruebas de punta a punta a través de [Protractor](http://www.protractortest.org/).
+Antes de ejecutar las pruebas, asegúrese de que está sirviendo la aplicación a través de `ng serve`.
 
-### Further help
+#### Más ayuda
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para obtener más ayuda sobre el CLI Angular use `ng help` o vaya a ver el [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
