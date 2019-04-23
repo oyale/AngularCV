@@ -9,7 +9,7 @@ Este fork es una traducción al castellano del proyecto <a href="https://github.
 
 Este proyecto tiene el propósito de tener un simple y autoalojado CV en línea fuera de LinkedIn, Xing, etc.
 
-Para una demostración en vivo, puede visitar[cv.schreck.berlin](http://cv.schreck.berlin), página para la cual este proyecto fue creado inicialmente.
+Para una demostración en vivo, puede visitar [cv.schreck.berlin](http://cv.schreck.berlin), página para la cual este proyecto fue creado inicialmente.
 
 
 ## De terceros 
