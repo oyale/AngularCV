@@ -14,12 +14,12 @@ Para una demostración en vivo, puede visitar[cv.schreck.berlin](http://cv.schre
 
 ## De terceros 
 
-Utiliza[Angular](https://angular.io/) y los componentes[Material Design components for Angular](https://material.angular.io/).
+Utiliza [Angular](https://angular.io/) y los componentes [Material Design components for Angular](https://material.angular.io/).
 Además, se incluyen las siguientes fuentes de terceros:
-*[Roboto](https://fonts.google.com/specimen/Roboto)
-*[Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
-*[IcoMoon Free](https://icomoon.io/#preview-free)
-*[jsPDF](https://github.com/MrRio/jsPDF)
+* [Roboto](https://fonts.google.com/specimen/Roboto)
+* [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
+* [IcoMoon Free](https://icomoon.io/#preview-free)
+* [jsPDF](https://github.com/MrRio/jsPDF)
 
 
 ## Configuración
@@ -34,10 +34,10 @@ A la postre, esto es sólo una prueba de concepto. Siéntase libre de tomarlo co
 Esto es lo que tendrás que cambiar para adaptar este proyecto para ti.
 
 * `src/app/cv-item/cv-items.data.ts` contiene todos los datos configurables de la página
-  * Puede utilizar la versión actual como modelo, pero tendrá que sustituir los datos de ejemplo por los suyos propios.
-  * Hay diferentes casos de uso configurados, por lo que puede ver diferentes conjuntos de datos, que se mostrarán de forma diferente en la página renderizada.
-  * Algunos campos son obligatorios porque aparecen en la interfaz. Por favor, compruébelo usted mismo
-  * Recomiendo clasificar los elementos por fecha final descendente, para que el elemento más nuevo se muestre en la parte superior.
+* Puede utilizar la versión actual como modelo, pero tendrá que sustituir los datos de ejemplo por los suyos propios.
+* Hay diferentes casos de uso configurados, por lo que puede ver diferentes conjuntos de datos, que se mostrarán de forma diferente en la página renderizada.
+* Algunos campos son obligatorios porque aparecen en la interfaz. Por favor, compruébelo usted mismo
+* Recomiendo clasificar los elementos por fecha final descendente, para que el elemento más nuevo se muestre en la parte superior.
 * Reemplace `src/assets/img/avatar.jpg` con su foto de perfil (avatar)
 * Reemplace `src/assets/img/cover.jpg` con una imagen para su página de resumen, imagínela como una especie de portada de libro.
 * Añada las imágenes que necesite en `src/assets/img/item thumbnails` (dependiendo de lo que configure en `src/app/cv-item/cv-items.data.ts`)
@@ -48,21 +48,19 @@ Para cumplir con la licencia de este proyecto y los elementos de terceros en él
 
 ## Fundamentos de Angular
 
-Consulte la[Guía básica angular] (ANGULAR.md) para obtener información básica. Para más información, visite el sitio web[Angular](https://angular.io/).
+Consulte la [Guía básica angular](ANGULAR.md) para obtener información básica. Para más información, visite el sitio web [Angular](https://angular.io/).
 
 ## Implementación para modo de producción
 
-<align="center">p align="center">
+<p align="center">
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">
 </p>
 
 Después de clonar/bifurcar este proyecto y ajustarlo a sus necesidades (y configurarlo con sus datos), es posible que desee implementarlo para que esté disponible para cualquiera.
 
-Vea mi[Guía de implementación de AWS](DEPLOYMENT_ON_AWS.md) para una posible forma de lograr esto con[Amazon Web Services (AWS)](https://aws.amazon.com/).
+Vea mi [Guía de implementación de AWS](DEPLOYMENT_ON_AWS.md) para una posible forma de lograr esto con [Amazon Web Services (AWS)](https://aws.amazon.com/).
 
-También puede utilizar[Uberspace](https://uberspace.de/), consulte la[Guía de implementación de Uberspace] correspondiente (DEPLOYMENT_ON_UBERSPACE.md).
+También puede utilizar [Uberspace](https://uberspace.de/), consulte la [Guía de implementación de Uberspace](DEPLOYMENT_ON_UBERSPACE.md) correspondiente .
 
-Como otra opción, puede utilizar[Github Pages](https://pages.github.com/), consulte la sección correspondiente[Github Pages 
+Como otra opción, puede utilizar [Github Pages](https://pages.github.com/), consulte la sección correspondiente [Github Pages 
 guía de implementación](DEPLOYMENT_ON_GITHUB_PAGES.md).
-
-Traducción realizada con el traductor www.DeepL.com/Translator
