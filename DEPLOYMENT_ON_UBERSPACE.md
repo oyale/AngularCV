@@ -4,56 +4,56 @@
 
 # AngularCV
 
-## Deployment on Uberspace
-I am also using [Uberspace](https://uberspace.de/) for private purposes. This is a lightweight server where you can pay as you like. The recommendation is to pay about 5 - 10 € per month, minimum is 1 € per month. They have a good [wiki](https://wiki.uberspace.de/start) (but only in German so far) for most of the needs you might have.
+## Implementación en Uberspace
+Utilizo también [Uberspace](https://uberspace.de/) con fines personales. Este es un servidor ligero donde puede pagar a voluntad. La recomendación es pagar entre 5 y 10 € al mes, el mínimo es de 1 € al mes. Tienen una buena [wiki] (https://wiki.uberspace.de/start) (pero sólo en alemán por ahora) para la mayoría de las necesidades que puedas tener.
 
-In order to deploy AngularCV to Uberspace, you will have to perform the following steps:
+Para implementar AngularCV en Uberspace, deberá realizar los siguientes pasos:
 
-1. Register a domain somewhere
-1. Register an [Uberspace](https://uberspace.de/) account
-1. Configure your new domain at your Uberspace, see [their wiki](https://wiki.uberspace.de/domain:verwalten)
-1. Configure the newer nodejs version and install Angular CLI
+1. Registrar un dominio en algún lugar
+1. Registre una cuenta de [Uberspace](https://uberspace.de/)
+1. Configure su nuevo dominio en su Uberspace, vea [su wiki](https://wiki.uberspace.de/domain:verwalten)
+1. Configurar la nueva versión de nodejs e instalar Angular CLI
     ```sh
-    echo 'export PATH=/package/host/localhost/nodejs-8/bin:$PATH' >> ~/.bash_profile  # use the newer nodejs version, as this is not the default
-    source ~/.bash_profile  # immediately apply the above change
-    npm install @angular/cli
+    echo 'export PATH=/package/host/localhost/nodejs-8/bin:$PATH' >> ~/.bash_profile # usa la nueva versión de nodejs, ya que ésta no es la predeterminada
+    source ~/.bash_profile # aplicar inmediatamente el cambio anterior
+    npm instalar @angular/cli
     ```
-1. Deploy your AngularJS app
+1. Implemente su aplicación AngularJS
     ```sh
     cd ~
     git clone git@github.com:YoutGithubAccount/AngularCV.git
     cd ~/AngularCV
-    ng build -prod --output-path=~/html/  # build the app for production environment and copy the result to the web root directory
+    ng build -prod --output-path=~/html/ # compilar la aplicación para el entorno de producción y copiar el resultado en el directorio raíz de la web
     ```
     
-    * (Optional) **Automate the deployment**
+    (Opcional) **Automatizar el despliegue***.
       
-      In order to always show the newest version, you can add a cron job to perform the above steps
-      * Add the following lines to `~/bin/deploy_cv.sh`, e.g. by `vim ~/bin/deploy_cv.sh`:
+      Para mostrar siempre la versión más reciente, puede añadir una tarea cron para realizar los pasos anteriores
+      * Añada las siguientes líneas a `~/bin/deploy_cv.sh`, por ejemplo por `vim ~/bin/deploy_cv.sh`:
         ```sh
         #!/bin/bash
   
         cd ~/AngularCV
         git pull
         source source ~/.bash_profile
-        ng build -prod --output-path=~/html/  # build the app for production environment and copy the result to the web root directory
+        ng build -prod --output-path=~/html/ # compilar la aplicación para el entorno de producción y copiar el resultado en el directorio raíz de la web
         ```
       
-      * Make the script executable via `chmod +x ~/bin/deploy_cv.s` and add the following line to the crontab
+      * Haga el script ejecutable vía `chmod +x ~/bin/deploy_cv.s` y añada la siguiente línea al crontab
         ```sh
-        # Deploy AngularCV
+        # Desplegar AngularCV
         @daily ~/bin/deploy_cv.sh
         ``` 
     
-    * see more here about website hosting at the [Uberspace wiki](https://wiki.uberspace.de/start:web)
+    * ver más aquí sobre el alojamiento de sitios web en el [Uberspace wiki](https://wiki.uberspace.de/start:web)
       
-1. In order to make the direct links and browser page refresh work add this content to the new file `~/html/.htaccess/`:
+1. Para que los enlaces directos y la actualización de la página del navegador funcionen, añada este contenido al nuevo archivo `~/html/.htaccess/`:
     ```
         RewriteEngine on
-        RewriteCond %{REQUEST_FILENAME} -s [OR]
-        RewriteCond %{REQUEST_FILENAME} -l [OR]
+        RewriteCond %{REQUEST_FILENAME} -s[OR]
+        RewriteCond %{REQUEST_FILENAME} -l[OR]
         RewriteCond %{REQUEST_FILENAME} -d
-        RewriteRule ^.*$ - [NC,L]
+        RewriteRule ^.*$ -[NC,L]
     
-        RewriteRule ^(.*) /index.html [NC,L]
+        RewriteRule ^(.*) /index.html[NC,L]
     ```
