@@ -4,34 +4,34 @@
 
 # AngularCV
 
-## Deployment to GitHub Pages
-Thanks to [mellab](https://github.com/mellab) for writing this documentation.
+## Implementación en GitHub Pages
+Gracias a [mellab](https://github.com/mellab) por escribir esta documentación.
 
-After you cloned/forked this project and adjusted it to your needs (and configuring with your data), you might want to deploy it in order to make it available to anyone.
+Después de clonar/borrar este proyecto y ajustarlo a sus necesidades (y configurarlo con sus datos), es posible que desee implementarlo para que esté disponible para cualquiera.
 
-This is a little guide of how to deploy this Angular project to [GitHub Pages](https://pages.github.com/) using the Angular CLI tool. You still can deploy it in a different way. This is only a suggestion.
+Esta es una pequeña guía de cómo implementar este proyecto Angular en [GitHub Pages](https://pages.github.com/) usando la herramienta CLI Angular. Se puede desplegar de otra manera. Esto es sólo una sugerencia.
 
-### Step 0: Install angular-cli-ghpages
+### Paso 0: Instalar angular-cli-ghpages
 ```sh
 npm i angular-cli-ghpages --save-dev
 ```
 
-### Step 1: Compile your Angular app into `/dist`
+### Paso 1: Compila tu aplicación Angular en `/dist`
 ```sh
 ng build && ng build --prod
 ```
 
-### Step 2: Set your URL
+### Paso 2: Configura tu URL
 ```sh
 ng build --prod --base-href https://stegschreck.github.io/AngularCV/
 ```
 
-This command will set your base-href which is the URL of the site were running our application to. When creating the URL the format is as follows:
-`https:// (your GitHub handle) .github.io/ (your repo name) /`
+Este comando establecerá su *href base*, que es la URL del sitio en el que se está ejecutando nuestra aplicación. Al crear la URL el formato es el siguiente:
+`https:// (tu nombre de GitHub) .github.io/ (tu nombre de repositorio) /``
 
-Don't forget the slash at the end or else it won't work.
+No olvides la barra al final o no funcionará.
 
-### Step 3: Deploy the project with a build from `/dist` folder
+### Paso 3: Desplegar el proyecto con una compilación desde la carpeta `/dist
 ```sh
 npx ngh
 ```
