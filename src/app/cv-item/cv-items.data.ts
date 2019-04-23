@@ -17,7 +17,7 @@ export const CVITEMS: CvItem[] = [
     description: '',
     tags: [],
     link: '',
-    thumbnail: 'IMAGE.jpg',
+    thumbnail: '',
   },
 ];
 
