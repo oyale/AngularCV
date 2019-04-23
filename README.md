@@ -48,7 +48,7 @@ Para cumplir con la licencia de este proyecto y los elementos de terceros en él
 
 ## Fundamentos de Angular
 
-Consulte la [Guía básica angular](ANGULAR.md) para obtener información básica. Para más información, visite el sitio web [Angular](https://angular.io/).
+Consulte la [Guía básica para Angular](ANGULAR.md) para obtener información básica. Para más información, visite el sitio web [Angular](https://angular.io/).
 
 ## Implementación para modo de producción
 
