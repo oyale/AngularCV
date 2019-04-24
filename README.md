@@ -11,7 +11,7 @@ Este proyecto tiene el propósito de tener un simple y autoalojado CV en línea 
 
 Para una demostración en vivo, puede visitar [cv.schreck.berlin](http://cv.schreck.berlin), página para la cual este proyecto fue creado originalmente. 
 
-Puede consultar la demostración en vivo de la versión en castellano [https://oyale.github.io/AngularCV-es/](aquí).
+Puede consultar la demostración en vivo de la versión en castellano [aquí](https://oyale.github.io/AngularCV-es/).
 
 
 ## De terceros 
