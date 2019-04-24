@@ -7,7 +7,7 @@
 ## Implementación en GitHub Pages
 Gracias a [mellab](https://github.com/mellab) por escribir esta documentación.
 
-Después de clonar/borrar este proyecto y ajustarlo a sus necesidades (y configurarlo con sus datos), es posible que desee implementarlo para que esté disponible para cualquiera.
+Después de clonar/bifurcar este proyecto y ajustarlo a sus necesidades (y configurarlo con sus datos), es posible que desee implementarlo para que esté disponible para cualquiera.
 
 Esta es una pequeña guía de cómo implementar este proyecto Angular en [GitHub Pages](https://pages.github.com/) usando la herramienta CLI Angular. Se puede desplegar de otra manera. Esto es sólo una sugerencia.
 
